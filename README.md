@@ -11,9 +11,8 @@
 
 Merhaba! Bu projemde TEKNOFEST SİHA yarışması için geliştirdiğim bir İHA takip ve kilitlenme sistemini sizlerle paylaşıyorum. Neden böyle bir şey yapıyorum çünkü iyilik kadar elde edilmesi kolay bir şey yok. Sistemimiz, düşman İHA'ları tespit edip takip ediyor ve yarışma şartnamesine uygun olarak kilitlenme gerçekleştiriyor. Görüntü işleme, nesne takibi ve servo motor kontrolü teknolojilerini bir araya getirerek, düşman İHA'ların tespiti, takibi ve gerektiğinde kilitlenme işlemlerini otomatik olarak yapabiliyoruz.
 
-<p align="center">
-  <img src="https://github.com/batikandemirci/savasan_iha/raw/main/docs/images/Tespit_ve_kilitlenme.gif" alt="Tespit ve Kilitlenme" width="600">
-</p>
+![Kitlenme Algoritması](https://raw.githubusercontent.com/batikandemirci/savasan_iha/main/assets/Kitlenme.gif)
+
 
 ### 🎯 Neler Yapabiliyoruz?
 
@@ -23,6 +22,10 @@ Merhaba! Bu projemde TEKNOFEST SİHA yarışması için geliştirdiğim bir İHA
 - **Yasak Bölge Kontrolü**: Önceden tanımlanmış yasak bölgeleri tanıyıp bu bölgelerden kaçınıyoruz
 - **QR Kod Tanımlama**: Hedef İHA'ların üzerindeki QR kodları okuyup tanımlıyoruz
 - **Kamikaze Modu**: Gerektiğinde kamikaze saldırı moduna geçip hedef İHA'ya yaklaşıyoruz
+- **Düşmandan Kaçma**: Gerektiğinde düşmandan kaçabiliyoruz.
+  
+![Düşmandan Kaçma](https://raw.githubusercontent.com/batikandemirci/savasan_iha/main/assets/d%C3%BC%C5%9Fmandan%20ka%C3%A7ma.gif)
+
 
 ## 🛠️ Sistemimizin Özellikleri
 
@@ -36,9 +39,8 @@ YOLO11 modelimiz ile:
 - Birden fazla İHA'yı aynı anda tespit edebiliyoruz
 - Zorlu ışık koşullarında bile başarılı tespitler yapabiliyoruz
 
-<p align="center">
-  <img src="https://github.com/batikandemirci/savasan_iha/raw/main/docs/images/Tespit_ve_kilitlenme.png" alt="Tespit ve Kilitlenme Çıktısı" width="600">
-</p>
+![Tespit ve Kilitlenme Çıktısı](https://raw.githubusercontent.com/batikandemirci/savasan_iha/main/assets/Kitlenme.png)
+
 
 ### 2. Nesne Takibi Algoritması
 
@@ -59,7 +61,7 @@ PID kontrolörü ile:
 - Aşırı düzeltme olmadan yumuşak kamera hareketi sağlayabiliyoruz
 - Farklı hız ve mesafelerde çalışabiliyoruz
 
-### 4. Servo Motor Kontrolü
+### 4. Servo Motor Kontrolü(kodolarak yazılmıştır, deneyemedim çünkü uçağım yok.)
 
 Pan/tilt mekanizması için iki servo motor kullanıyoruz. Bu motorlar, PID kontrolörünün çıktısına göre hareket ederek kameranın hedefi takip etmesini sağlıyor.
 
@@ -73,9 +75,8 @@ Servo kontrol sistemimiz:
 
 Önceden tanımlanmış yasak bölgeleri (no-fly zone) tanıyıp bu bölgelerden kaçınıyoruz. Her yasak bölge, merkez koordinatları ve yarıçapı ile tanımlanıyor. İHA'nın konumunu sürekli olarak kontrol edip yasak bölgeye yaklaşması durumunda kaçınma vektörü hesaplıyoruz.
 
-<p align="center">
-  <img src="https://github.com/batikandemirci/savasan_iha/raw/main/docs/images/no-fly-zone.gif" alt="No-fly Zone Kontrolü" width="600">
-</p>
+![No-fly Zone Kontrolü](https://raw.githubusercontent.com/batikandemirci/savasan_iha/main/assets/Ka%C3%A7%C4%B1nma.gif)
+
 
 No-fly zone kontrolü ile:
 - Yasak bölgeleri gerçek zamanlı tespit ediyoruz
@@ -97,9 +98,7 @@ QR kod okuma sistemimiz:
 
 Hedef İHA'ya yaklaşıp QR kodunu okumak için kamikaze modunu kullanıyoruz. Bu mod, düşman İHA'ya kontrollü bir şekilde yaklaşmamızı sağlıyor.
 
-<p align="center">
-  <img src="https://github.com/batikandemirci/savasan_iha/raw/main/docs/images/Kamikaze.gif" alt="Kamikaze Modu" width="600">
-</p>
+![Kamikaze Modu](https://raw.githubusercontent.com/batikandemirci/savasan_iha/main/assets/Kamikaze.gif)
 
 Kamikaze modu ile:
 - Hedef İHA'ya güvenli bir şekilde yaklaşabiliyoruz
@@ -110,10 +109,6 @@ Kamikaze modu ile:
 ## 🏗️ Sistemimizin Mimarisi
 
 Sistemimiz, aşağıdaki ana bileşenlerden oluşuyor:
-
-<p align="center">
-  <img src="https://github.com/batikandemirci/savasan_iha/raw/main/docs/images/system_architecture.png" alt="Sistem Mimarisi" width="800">
-</p>
 
 1. **Tespit Modülü**: Özel eğitilmiş YOLO11 modeli kullanarak İHA'ları tespit ediyoruz
 2. **Takip Modülü**: Kalman filtresi kullanarak İHA'ları takip ediyoruz
@@ -256,10 +251,6 @@ Parametreler:
 ## 🎮 Simülasyon Modu
 
 Sistemimizi, gerçek donanım olmadan da test edebiliyoruz. Simülasyon modu, servo motorları ve kamera hareketlerini görsel olarak simüle ediyor.
-
-<p align="center">
-  <img src="https://github.com/batikandemirci/savasan_iha/raw/main/docs/images/servo_simulation.png" alt="Servo Simülasyonu" width="400">
-</p>
 
 Simülasyon modunun avantajları:
 - Gerçek donanım olmadan sistem geliştirme ve test yapabiliyoruz
