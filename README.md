@@ -9,7 +9,7 @@
 
 ## Proje Hakkında
 
-Merhaba! Bu projemde TEKNOFEST SİHA yarışması için geliştirdiğim bir İHA takip ve kilitlenme sistemini sizlerle paylaşıyorum. Neden böyle bir şey yapıyorum çünkü iyilik kadar elde edilmesi kolay bir şey yok. Sistemimiz, düşman İHA'ları tespit edip takip ediyor ve yarışma şartnamesine uygun olarak kilitlenme gerçekleştiriyor. Görüntü işleme, nesne takibi ve servo motor kontrolü teknolojilerini bir araya getirerek, düşman İHA'ların tespiti, takibi ve gerektiğinde kilitlenme işlemlerini otomatik olarak yapabiliyoruz.
+Merhaba! Bu projemde TEKNOFEST SİHA yarışması için geliştirdiğim bir İHA takip ve kilitlenme sistemini sizlerle paylaşıyorum. Neden böyle bir şey yapıyorum çünkü iyilik kadar elde edilmesi kolay bir şey yok. Sistemimiz, düşman İHA'ları tespit edip takip ediyor ve yarışma şartnamesine uygun olarak kilitlenme gerçekleştiriyor. Görüntü işleme, nesne takibi ve servo motor(servoyu deneyemedim ama kod olarak yerleştirdim) kontrolü teknolojilerini bir araya getirerek, düşman İHA'ların tespiti, takibi ve gerektiğinde kilitlenme işlemlerini otomatik olarak yapabiliyoruz.
 
 ![Kitlenme Algoritması](https://raw.githubusercontent.com/batikandemirci/savasan_iha/main/assets/Kitlenme.gif)
 
@@ -61,7 +61,7 @@ PID kontrolörü ile:
 - Aşırı düzeltme olmadan yumuşak kamera hareketi sağlayabiliyoruz
 - Farklı hız ve mesafelerde çalışabiliyoruz
 
-### 4. Servo Motor Kontrolü(kodolarak yazılmıştır, deneyemedim çünkü uçağım yok.)
+### 4. Servo Motor Kontrolü
 
 Pan/tilt mekanizması için iki servo motor kullanıyoruz. Bu motorlar, PID kontrolörünün çıktısına göre hareket ederek kameranın hedefi takip etmesini sağlıyor.
 
