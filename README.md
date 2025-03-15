@@ -7,14 +7,14 @@
   <img src="https://img.shields.io/badge/License-MIT-yellow" alt="License: MIT">
 </div>
 
-## 📋 Proje Hakkında
+## Proje Hakkında
 
 Merhaba! Bu projemde TEKNOFEST SİHA yarışması için geliştirdiğim bir İHA takip ve kilitlenme sistemini sizlerle paylaşıyorum. Neden böyle bir şey yapıyorum çünkü iyilik kadar elde edilmesi kolay bir şey yok. Sistemimiz, düşman İHA'ları tespit edip takip ediyor ve yarışma şartnamesine uygun olarak kilitlenme gerçekleştiriyor. Görüntü işleme, nesne takibi ve servo motor kontrolü teknolojilerini bir araya getirerek, düşman İHA'ların tespiti, takibi ve gerektiğinde kilitlenme işlemlerini otomatik olarak yapabiliyoruz.
 
 ![Kitlenme Algoritması](https://raw.githubusercontent.com/batikandemirci/savasan_iha/main/assets/Kitlenme.gif)
 
 
-### 🎯 Neler Yapabiliyoruz?
+### Neler Yapabiliyoruz?
 
 - **Düşman İHA Tespiti**: Kamera görüntüsünden düşman İHA'ları gerçek zamanlı olarak tespit ediyoruz
 - **Sürekli Takip**: Tespit ettiğimiz İHA'ları sürekli olarak takip edip kamera görüş alanında tutuyoruz
@@ -27,7 +27,7 @@ Merhaba! Bu projemde TEKNOFEST SİHA yarışması için geliştirdiğim bir İHA
 ![Düşmandan Kaçma](https://raw.githubusercontent.com/batikandemirci/savasan_iha/main/assets/d%C3%BC%C5%9Fmandan%20ka%C3%A7ma.gif)
 
 
-## 🛠️ Sistemimizin Özellikleri
+##  Sistemimizin Özellikleri
 
 ### 1. Görüntü İşleme ve Nesne Tespiti
 
@@ -106,7 +106,7 @@ Kamikaze modu ile:
 - Çarpışma riskini minimize ediyoruz
 - Görev tamamlandığında güvenli bir şekilde uzaklaşabiliyoruz
 
-## 🏗️ Sistemimizin Mimarisi
+##  Sistemimizin Mimarisi
 
 Sistemimiz, aşağıdaki ana bileşenlerden oluşuyor:
 
@@ -118,7 +118,7 @@ Sistemimiz, aşağıdaki ana bileşenlerden oluşuyor:
 6. **Görev Modülleri**: Kamikaze, kaçış ve diğer görevleri yönetiyoruz
 7. **Güvenlik Modülü**: No-fly zone kontrolü yapıyoruz
 
-## 📦 Modüllerimiz ve İşlevleri
+##  Modüllerimiz ve İşlevleri
 
 ### 1. Tespit Modülü
 - İHA'ları gerçek zamanlı olarak tespit ediyoruz
@@ -155,7 +155,7 @@ Sistemimiz, aşağıdaki ana bileşenlerden oluşuyor:
 - Güvenli geçiş rotaları öneriyoruz
 - Çarpışma önleme algoritmaları uyguluyoruz
 
-## 🔧 Kurulum ve Kullanım
+##  Kurulum ve Kullanım
 
 ### Gereksinimler
 
@@ -264,7 +264,7 @@ Simülasyon modunun avantajları:
 python src/test_servo.py --simulation
 ```
 
-## ⚡ Performans ve Optimizasyon
+##  Performans ve Optimizasyon
 
 Sistemimizi gerçek zamanlı çalışma için optimize ettik:
 
@@ -273,11 +273,11 @@ Sistemimizi gerçek zamanlı çalışma için optimize ettik:
 - **Hassas Kontrol**: PID parametrelerini (Kp, Ki, Kd) sistem yanıtını optimize etmek için ayarlıyoruz
 - **Adaptif İşleme**: Sistem yükü ve performans arasında denge sağlamak için adaptif işleme teknikleri kullanıyoruz
 
-## 📄 Lisans
+##  Lisans
 
 Bu proje MIT lisansı altında lisanslanmıştır. Detaylar için [LICENSE](LICENSE) dosyasına bakın.
 
-## 📞 İletişim
+##  İletişim
 
 Proje Sahibi - [@github_batikandemirci](https://github.com/batikandemirci)
 
