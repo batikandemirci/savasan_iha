@@ -1,4 +1,4 @@
-# 🚁 TEKNOFEST İHA Yarışması - İHA Takip ve Kilitlenme Sistemi
+# TEKNOFEST SİHA Yarışması - İHA Takip ve Kilitlenme Sistemi
 
 <div align="center">
   <img src="https://img.shields.io/badge/Python-3.7%2B-blue" alt="Python 3.7+">
