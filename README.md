@@ -248,7 +248,7 @@ Parametreler:
 - `--conf`: Tespit güven eşiği (varsayılan: 0.5)
 - `--output`: Çıktı video dosyası (varsayılan: output/tracking_test.avi)
 
-## 🎮 Simülasyon Modu
+##  Simülasyon Modu
 
 Sistemimizi, gerçek donanım olmadan da test edebiliyoruz. Simülasyon modu, servo motorları ve kamera hareketlerini görsel olarak simüle ediyor.
 
